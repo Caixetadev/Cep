@@ -1,6 +1,6 @@
 const pesquisarCep = async() => {
   const cep = document.getElementById('cep').value
-  const url = `http://cep.awesomeapi.com.br/json/${cep}`
+  const url = `https://cep.awesomeapi.com.br/json/${cep}`
 
   const dados = await fetch(url)
   const endereco = await dados.json()
@@ -22,9 +22,9 @@ const pesquisarCep = async() => {
   <p><b>latitude</b>: ${endereco.lat}</p>
 
 
-  </div>
+  </div>`
 
-  `
+
 }
 
 document.getElementById('cep')
